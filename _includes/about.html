@@ -1,4 +1,21 @@
- <div class="user-details">
+<style>
+  .user {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+  }
+
+  .tech, .tech2, .tech3 {
+    flex: 0 1 auto; /* Allows the width to adjust based on content */
+    margin: 10px;
+  }
+
+  .line-break {
+    flex-basis: 100%; /* Forces a line break */
+    height: 0; /* No height, just acts as a break */
+  }
+</style>
+
+<div class="user-details">
   <h1> About Me </h1>
   <p> {{site.user_description}} </p>
 </div>
