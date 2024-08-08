@@ -2,6 +2,7 @@
   .user {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to the next line */
+    margin-top: 20px; /* Optional: Adds some space between the About Me section and the skills section */
   }
 
   .tech, .tech2, .tech3 {
@@ -13,12 +14,17 @@
     flex-basis: 100%; /* Forces a line break */
     height: 0; /* No height, just acts as a break */
   }
+
+  .user-details {
+    margin-bottom: 20px; /* Optional: Adds some space between the About Me section and the skills section */
+  }
 </style>
 
 <div class="user-details">
   <h1> About Me </h1>
   <p> {{site.user_description}} </p>
 </div>
+
 <div class="user">
   <!-- First line -->
   <div class="tech">
