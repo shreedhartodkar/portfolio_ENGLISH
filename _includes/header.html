@@ -1,3 +1,41 @@
+<style>
+.testimonials-section {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.testimonial {
+  display: none;
+  padding: 20px;
+  font-style: italic;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+</style> 
+
 <div id="particles-js">
   <div class="header">
       <h1>
@@ -20,24 +58,46 @@
       </div>
   </div>
 
-  <div class="testimonials-section">
-    <h2 class="section-title">Testimonials</h2>
-    <div class="testimonials-container">
-      <div class="testimonial active">
-        <p>"This course was a game-changer for my career. The hands-on approach made complex concepts easy to understand!"</p>
-        <h4>- John Doe</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Excellent teaching style and well-structured material. I highly recommend this course to anyone looking to advance their skills."</p>
-        <h4>- Jane Smith</h4>
-      </div>
-      <div class="testimonial">
-        <p>"A comprehensive course with practical examples that are directly applicable to the industry."</p>
-        <h4>- Alex Brown</h4>
-      </div>
+<!-- Add Testimonials Section Here -->
+<div class="testimonials-section">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="testimonials-container">
+    <div class="testimonial active">
+      <p>"This course was a game-changer for my career. The hands-on approach made complex concepts easy to understand!"</p>
+      <h4>- John Doe</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Excellent teaching style and well-structured material. I highly recommend this course to anyone looking to advance their skills."</p>
+      <h4>- Jane Smith</h4>
+    </div>
+    <div class="testimonial">
+      <p>"A comprehensive course with practical examples that are directly applicable to the industry."</p>
+      <h4>- Alex Brown</h4>
     </div>
   </div>
-  
+</div>
 
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
+
+<script>
+  let currentIndex = 0;
+  const testimonials = document.querySelectorAll('.testimonial');
+  const totalTestimonials = testimonials.length;
+
+  function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+      testimonial.classList.remove('active');
+      if (i === index) {
+        testimonial.classList.add('active');
+      }
+    });
+  }
+
+  function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % totalTestimonials;
+    showTestimonial(currentIndex);
+  }
+
+  setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
+</script>
