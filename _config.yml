@@ -2,7 +2,7 @@
 title: Portfolio - Shreedhar Todkar  
 description: Shreedhar's portfolio, his life and career paths
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Shreedhar Todkar
