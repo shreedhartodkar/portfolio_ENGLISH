@@ -16,7 +16,11 @@
 }
 
 .slide img {
-  width: 100%;
+  width: 100%; /* Ensures the image takes up full width of the container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  max-width: 100%; /* Ensures the image does not overflow the container */
+  height: 250px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
