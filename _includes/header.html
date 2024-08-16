@@ -1,4 +1,4 @@
-<!-- <style>
+<style>
 .testimonials-section {
   background-color: #f8f8f8;
   padding: 40px 20px;
@@ -33,105 +33,36 @@
   font-size: 1em;
   color: #333;
 }
-</style>  -->
+</style> 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-  <style>
-    /* Ensure the header is positioned relatively */
-    .header {
-      position: relative;
-      padding: 20px;
-      background: #f5f5f5; /* Example background color */
-    }
+<div id="particles-js">
+  <div class="header">
 
-    /* Style for the language selector */
-    .language-selector {
-      position: absolute;
-      top: 10px; /* Adjust as needed */
-      right: 10px; /* Adjust as needed */
-      z-index: 10; /* Ensure it appears above other elements */
-    }
-
-    .language-selector select {
-      padding: 5px;
-      border: none;
-      background-color: transparent; /* Adjust background if needed */
-    }
-
-    .language-selector img {
-      vertical-align: middle; /* Aligns flags nicely */
-      width: 30px; /* Adjust the size as needed */
-    }
-
-    .testimonials-section {
-  background-color: #f8f8f8;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.testimonials-container {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  height: 200px;
-}
-
-.testimonial {
-  display: none;
-  padding: 20px;
-  font-style: italic;
-}
-
-.testimonial.active {
-  display: block;
-}
-
-.testimonial p {
-  font-size: 1.2em;
-  color: #555;
-}
-
-.testimonial h4 {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #333;
-}
-  </style>
-</head>
-
-<body>
-  <div id="particles-js">
-    <div class="header">
-      <div class="language-selector">
-        <select id="language-select" onchange="changeLanguage()">
-          <option value="en" data-flag="en_flag.png">
-            <img src="en_flag.png" alt="English" />
-          </option>
-          <option value="fr" data-flag="fr_flag.png">
-            <img src="fr_flag.png" alt="Français" />
-          </option>
-          <option value="es" data-flag="es_flag.png">
-            <img src="es_flag.png" alt="Español" />
-          </option>
-        </select>
-      </div>
-
+    <div class="language-selector">
+      <select id="language-select" onchange="changeLanguage()">
+        <option value="en" data-flag="en_flag.png">
+          <img src="en_flag.png" alt="English" width="30" />
+        </option>
+        <option value="fr" data-flag="fr_flag.png">
+          <img src="fr_flag.png" alt="Français" width="30" />
+        </option>
+        <option value="es" data-flag="es_flag.png">
+          <img src="es_flag.png" alt="Español" width="30" />
+        </option>
+        <!-- Add more languages and corresponding flags as needed -->
+      </select>
+    </div>
+    
       <h1>
         <span class="site-title">{{site.username}}</span>
         <span class="site-description">{{site.user_title}}</span>
       </h1>
       <div class="header-icons">
-        <a aria-label="Send email" href="mailto:shreedhar.todkar@gmail.com"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="Send email" href="shreedhar.todkar@gmail.com"><i class="icon fa fa-envelope"></i></a>
         <a aria-label="My Twitter" target="_blank" href="https://www.researchgate.net/profile/Shreedhar-Savant-Todkar"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
         <a aria-label="My Google Scholar" target="_blank" href="https://scholar.google.com/citations?user=1wvfD8kAAAAJ&hl=en"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
         <a aria-label="My Github" target="_blank" href="https://github.com/shreedhartodkar"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="My Instagram" href="https://www.instagram.com/je_suis_shreedhar" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a aria-label="My Instagram"  href="https://www.instagram.com/je_suis_shreedhar" target="_blank"><i class="fab fa-instagram"></i></a>
         <a aria-label="My Facebook" href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
       </div>
       <div class="header-links">
@@ -139,12 +70,12 @@
         <a class="link" href="#main_ProfessionalExperience" data-scroll>Professional Experience</a>
         <a class="link" href="#main_ResearchExperience" data-scroll>Research Experience</a>
         <a class="link" href="#main_TeachingExperience" data-scroll>Teaching Experience</a>
+
         <a class="link" href="#main_ProfessionalSkills" data-scroll>Professional Skills</a>
         <a class="link" href="#main_Education" data-scroll>Education</a>        
       </div>
-    </div>
-
-    <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
   </div>
-</body>
-</html>
+
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
