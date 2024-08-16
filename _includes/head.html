@@ -1,19 +1,26 @@
 <head>
-  <div class="language-selector">
-    <select id="language-select" onchange="changeLanguage()">
-      <option value="en">English</option>
-      <option value="fr">Français</option>
-      <option value="es">Español</option>
-      <!-- Add more languages as needed -->
-    </select>
-  </div>
-  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+
+  <div class="language-selector">
+    <select id="language-select" onchange="changeLanguage()">
+      <option value="en" data-flag="en_flag.png">
+        <img src="en_flag.png" alt="English" />
+      </option>
+      <option value="fr" data-flag="fr_flag.png">
+        <img src="fr_flag.png" alt="Français" />
+      </option>
+      <option value="es" data-flag="es_flag.png">
+        <img src="es_flag.png" alt="Español" />
+      </option>
+      <!-- Add more languages and corresponding flags as needed -->
+    </select>
+  </div>
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 </head>
