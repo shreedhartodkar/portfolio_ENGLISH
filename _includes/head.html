@@ -7,20 +7,8 @@
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 
-  <div class="language-selector">
-    <select id="language-select" onchange="changeLanguage()">
-      <option value="en" data-flag="en_flag.png">
-        <img src="en_flag.png" alt="English" width="30" />
-      </option>
-      <option value="fr" data-flag="fr_flag.png">
-        <img src="fr_flag.png" alt="Français" width="30" />
-      </option>
-      <option value="es" data-flag="es_flag.png">
-        <img src="es_flag.png" alt="Español" width="30" />
-      </option>
-      <!-- Add more languages and corresponding flags as needed -->
-    </select>
-  </div>
-
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 </head>
+
+
+
