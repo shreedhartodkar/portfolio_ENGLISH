@@ -51,52 +51,15 @@
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="#pro_experience" data-scroll>Profession & Research Experience</a>
-        <a class="link" href="#pro_experience" data-scroll>Education</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
+        <a class="link" href="#main_ProfessionalExperience" data-scroll>Professional Experience</a>
+        <a class="link" href="#main_ResearchExperience" data-scroll>Research Experience</a>
+        <a class="link" href="#main_TeachingExperience" data-scroll>Teaching Experience</a>
+
+        <a class="link" href="#main_ProfessionalSkills" data-scroll>Professional Skills</a>
+        <a class="link" href="#main_Education" data-scroll>Education</a>        
       </div>
   </div>
 
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-<!-- Add Testimonials Section Here -->
-<div class="testimonials-section">
-  <h2 class="section-title">Testimonials</h2>
-  <div class="testimonials-container">
-    <div class="testimonial active">
-      <p>"This course was a game-changer for my career. The hands-on approach made complex concepts easy to understand!"</p>
-      <h4>- John Doe</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Excellent teaching style and well-structured material. I highly recommend this course to anyone looking to advance their skills."</p>
-      <h4>- Jane Smith</h4>
-    </div>
-    <div class="testimonial">
-      <p>"A comprehensive course with practical examples that are directly applicable to the industry."</p>
-      <h4>- Alex Brown</h4>
-    </div>
-  </div>
-</div>
-
-<script>
-  let currentIndex = 0;
-  const testimonials = document.querySelectorAll('.testimonial');
-  const totalTestimonials = testimonials.length;
-
-  function showTestimonial(index) {
-    testimonials.forEach((testimonial, i) => {
-      testimonial.classList.remove('active');
-      if (i === index) {
-        testimonial.classList.add('active');
-      }
-    });
-  }
-
-  function nextTestimonial() {
-    currentIndex = (currentIndex + 1) % totalTestimonials;
-    showTestimonial(currentIndex);
-  }
-
-  setInterval(nextTestimonial, 3000); // Change testimonial every 5 seconds
-</script>
