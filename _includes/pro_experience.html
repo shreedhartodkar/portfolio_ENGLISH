@@ -2,8 +2,10 @@
 .project-container {
   display: flex;
   align-items: flex-start;
-  max-width: 90%;
-  gap: 80px;
+  max-width: 1200px; /* Set your desired maximum width */
+  width: 100%;
+  gap: 20px;
+  margin: 0 auto; /* Centers the project-container */
 }
 
 .slideshow-container {
@@ -95,22 +97,6 @@ document.addEventListener('DOMContentLoaded', initSlideshows);
   </div>
 </div>
 
-
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
-
-
 <div class="user-projects">
   <div class="project-container">
     <div class="images-right">
@@ -125,7 +111,7 @@ document.addEventListener('DOMContentLoaded', initSlideshows);
           <img src="test3.jpg" alt="Image 3">
         </div>
       </div>
-    </div> </div>
+    </div> 
     <div class="contents-left">
       <h3> Researcher at Cerema & Université Gustave Eiffel </h3>
       <p>
@@ -140,7 +126,7 @@ document.addEventListener('DOMContentLoaded', initSlideshows);
       </p>
       <a class="project-link" href="research_exp.html">Check it out</a>
     </div>
-  <!-- </div> -->
+  </div>
 </div>
 
 
