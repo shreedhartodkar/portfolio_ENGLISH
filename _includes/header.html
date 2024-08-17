@@ -54,7 +54,7 @@
 <div id="particles-js">
   <div class="header">
 
-    <div class="language-selector">
+    <!-- <div class="language-selector">
       <select id="language-select" onchange="changeLanguage()">
         <option value="en" data-flag="en_flag.png">
           <img src="en_flag.png" alt="English" width="30" />
@@ -65,10 +65,19 @@
         <option value="es" data-flag="es_flag.png">
           <img src="es_flag.png" alt="Español" width="30" />
         </option>
-        <!-- Add more languages and corresponding flags as needed -->
+        
+      </select>
+    </div> -->
+ 
+    <div class="language-selector">
+      <select id="language-select" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <!-- Add more languages as needed -->
       </select>
     </div>
-    
+        
       <h1>
         <span class="site-title">{{site.username}}</span>
         <span class="site-description">{{site.user_title}}</span>
