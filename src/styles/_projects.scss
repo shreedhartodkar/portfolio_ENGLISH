@@ -40,12 +40,14 @@
   @media only screen and (min-width: $cut) {
     float: left;
     margin-top: -5%;
+    text-align: justify;
     width: 48%;
   }
 }
 .contents-right {
   @media only screen and (min-width: $cut) {
     float: right;
+    text-align: justify;
     margin-top: -5%;
     width: 48%;
   }
